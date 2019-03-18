@@ -5,7 +5,7 @@ const ui = require('./ui.js')
 
 const onGetBooks = (event) => {
   event.preventDefault()
-  api.getBooks()
+  api.index()
     .then(ui.getBooksSuccess)
     .catch(ui.failure)
 }
